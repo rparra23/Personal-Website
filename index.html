@@ -9,25 +9,25 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000;
+            background-color: #e6e6e6;
             color: #333;
         }
         header {
-            background-color: rgb(13, 13, 11);
+            background-color: rgb(255, 255, 255);
             text-align: center;
             padding: 20px 0;
-            border-bottom: 1px solid #0011ff;
+            border-bottom: 3px solid #0011ff;
         }
         header img {
-            width: 140px;
-            height: 180px;
+            width: 240px;
+            height: 290px;
             border-radius: 10%;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         }
         header h1 {
-            margin: 10px 0 0;
+            margin: 0px 0 0;
             font-size: 24px;
-            color: #ffffff;
+            color: #000000;
         }
         header p {
             margin: 5px 0 20px;
@@ -104,6 +104,10 @@
         .contact-info a:hover {
             background-color: #5d5d5d;
         }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
     </style>
     <script src="images.js" defer></script>
     <script>
@@ -114,32 +118,35 @@
     </script>
 </head>
 <body>
-    <header>
+    <header class="section social-links">
         <img id="profile-pic" alt="Rodolfo Parra">
         <!--img id="logo" alt="Parra Inc. Logo"-->
         <h1>Rudy Parra</h1>
         <p>Technology Consultant</p>
+        <p>at</p>
+        <a href="https://github.com/rparra23" target="_blank">Telemetry Insight</a>
     </header>
 
     <div class="container">
         <div class="section contact-info">
             <h2>Contact Information</h2>
-            <p>Phone:</p>
+            <b>Phone:</b>
             <p>(575) 725-1290</p>
-            <p>iCloud Email:</p>
+            <p>-</p>
+            <b>Personal Email:</b>
             <p>parrarudy3@icloud.com</p>
-            <p>Telemetry Insight Email:</p>
+            <p>-</p>
+            <b>Company Email:</b>
             <p>rudy.parra@telemetryinsight.com</p>
             <a href="contact.vcf" download="Rodolfo_Parra.vcf">Add to Contacts</a>
         </div>
 
         <div class="section social-links">
             <h2>Connect with Me</h2>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
-            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-            <a href="https://github.com/yourprofile" target="_blank">Instagram</a>
-            <a href="https://github.com/yourprofile" target="_blank">FaceBook</a>
+            <a href="www.linkedin.com/in/rodolfo-parra-329a2318a" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/_rudyparra/" target="_blank">Instagram</a>
+            <a href="https://github.com/rparra23" target="_blank">GitHub</a>
+            <a href="https://www.hackster.io/rudy-parra" target="_blank">hackster.io</a>
             <!-- Add more social links as needed -->
         </div>
 
@@ -164,10 +171,21 @@
         <div class="section">
             <h2>Companies I've Worked With</h2>
             <ul>
-                <li>Telemetry Insight</li>
-                    <li>Oil & Gas Industry</li>
-                <li>Integrated Off Grid</li>
-                <li>Lockheed Martin</li>
+                <li>Telemetry Insight
+                    <ul>
+                        <li>Developed IoT solutions for real-time data monitoring in the oil and gas industry.</li>
+                    </ul>
+                </li>
+                <li>Integrated Off Grid
+                    <ul>
+                        <li>Implemented energy management systems and optimized data analytics for off-grid solutions.</li>
+                    </ul>
+                </li>
+                <li>Lockheed Martin
+                    <ul>
+                        <li>Worked on robotics integration and automation projects to enhance manufacturing processes.</li>
+                    </ul>
+                </li>
                 <!-- Add more companies as needed -->
             </ul>
         </div>
