@@ -33,22 +33,14 @@
             margin: 5px 0 20px;
             color: #000000;
         }
-        .Button-container {
-            max-width: 200px;
-            margin: 0px auto;
-            background-color: #000000;
-            padding: 0px;
-            border-radius: 50px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
-        }
         .container {
             width: 80%;
             max-width: 1200px;
             margin: 40px auto;
             background-color: #ffffff;
             padding: 20px;
-            border-radius: 50px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin-bottom: 40px;
@@ -73,6 +65,13 @@
             color: #0073b1;
             font-size: 18px;
         }
+        .social-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .social-links li {
+            margin-bottom: 10px;
+        }
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -96,29 +95,38 @@
             text-align: center;
             margin-top: 0px;
         }
-        .contact-info p {
-            font-size: 100px;
-            margin: 5px 0;
-        }
         .contact-info a {
             display: inline-block;
-            height: -1px;
-            margin-top: 0px;
+            margin-top: 20px;
             padding: 10px 20px;
             background-color: #000000;
             color: #fff;
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 4px;
         }
         .contact-info a:hover {
             background-color: #5d5d5d;
         }
-        ul ul {
-            list-style-type: circle;
-            margin-left: 20px;
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            header img {
+                width: 180px;
+                height: 230px;
+            }
+            header h1 {
+                font-size: 20px;
+            }
+            .section h2 {
+                font-size: 18px;
+            }
+            .about-me p {
+                font-size: 16px;
+            }
         }
     </style>
-    <script src="images/images.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('profile-pic').src = profilePicBase64; //Profile Picture 
