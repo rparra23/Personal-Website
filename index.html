@@ -58,24 +58,23 @@
             font-size: 18px;
             line-height: 1.6;
         }
+        .social-links {
+            text-align: center;
+        }
         .social-links a {
             display: inline-block;
-            margin-right: 10px;
+            margin: 0 10px;
             text-decoration: none;
-            color: #0073b1;
-            font-size: 18px;
-        }
-        .social-links a i {
             font-size: 24px;
             color: #000;
             transition: color 0.3s;
         }
-        .social-links a:hover i {
+        .social-links a:hover {
             color: #0073b1;
         }
         .contact-form input,
         .contact-form textarea {
-            width: 90%;
+            width: 100%;
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ddd;
@@ -128,7 +127,7 @@
     </script>
 </head>
 <body>
-    <header class="section social-links">
+    <header class="section">
         <div class="container">
             <img id="profile-pic" alt="Rodolfo Parra">
             <h1>Rudy Parra</h1>
@@ -137,8 +136,7 @@
             <p>(575) 725-1290</p>
             <p><b>Email:</b></p>
             <p>parrarudy3@icloud.com</p>
-
-            <div class="section contact-info">    
+            <div class="contact-info">    
                 <a href="contact.vcf" download="Rodolfo_Parra.vcf">Add to Contacts</a>
             </div>
         </div>
