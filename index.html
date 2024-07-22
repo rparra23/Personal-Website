@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rudy Parra | Contact Sheet</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,28 +14,28 @@
             background-color: rgb(198, 192, 177);
             color: #333;
         }
-        header {
+        .header {
             background-color: rgb(198, 192, 177);
             text-align: center;
             padding: 20px 0;
             border-bottom: 3px solid rgb(198, 192, 177);
         }
-        header img {
+        .header img {
             width: 240px;
             height: 310px;
             border-radius: 10%;
             margin-bottom: 0px;
         }
-        header h1 {
+        .header h1 {
             margin: 10px 0 0;
             font-size: 24px;
             color: #000000;
         }
-        header p {
+        .header p {
             margin: 5px 0 20px;
             color: #000000;
         }
-        .container {
+        .container-custom {
             width: 80%;
             max-width: 1200px;
             margin: 40px auto;
@@ -50,9 +52,6 @@
             margin-bottom: 20px;
             border-bottom: 2px solid #ddd;
             padding-bottom: 10px;
-        }
-        .about-me {
-            text-align: left;
         }
         .about-me p {
             font-size: 18px;
@@ -91,10 +90,6 @@
         .contact-form button:hover {
             background-color: #5d5d5d;
         }
-        .contact-info {
-            text-align: center;
-            margin-top: 0px;
-        }
         .contact-info a {
             display: inline-block;
             margin-top: 20px;
@@ -108,15 +103,15 @@
             background-color: #5d5d5d;
         }
         @media (max-width: 768px) {
-            .container {
+            .container-custom {
                 width: 100%;
                 padding: 10px;
             }
-            header img {
+            .header img {
                 width: 180px;
                 height: 230px;
             }
-            header h1 {
+            .header h1 {
                 font-size: 20px;
             }
             .section h2 {
@@ -135,7 +130,7 @@
     </script>
 </head>
 <body>
-    <header class="section social-links">
+    <header class="header animate__animated animate__fadeInDown">
         <div class="container">
             <img id="profile-pic" alt="Rodolfo Parra">
             <h1>Rudy Parra</h1>
@@ -154,7 +149,7 @@
         Your browser does not support the audio element.
     </audio>
 
-    <div class="container">
+    <div class="container-custom animate__animated animate__fadeInUp">
         <div class="section social-links">
             <h2>Connect with Me</h2>
             <ul>
@@ -169,7 +164,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-custom animate__animated animate__fadeInUp">
         <div class="section about-me">
             <h2>About</h2>
             <p>Hello! I'm Rodolfo Parra, a technology consultant with a passion for IoT, robotics, and graphic design. With years of experience in the tech industry, I've worked on various projects that bridge the gap between technology and business needs. I aim to provide innovative solutions that drive efficiency and growth.</p>
@@ -198,7 +193,7 @@
 
         <div class="section contact-form">
             <h2>Contact Me</h2>
-            <form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -206,5 +201,9 @@
             </form>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
