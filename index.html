@@ -36,7 +36,7 @@
         .container {
             width: 80%;
             max-width: 1200px;
-            margin: 40px auto;
+            margin: -10px auto;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 50px;
@@ -59,7 +59,7 @@
             line-height: 1.6;
         }
         .social-links {
-            text-align: center;
+            text-align: left;
         }
         .social-links a {
             display: inline-block;
@@ -141,13 +141,14 @@
             </div>
         </div>
     </header>
-
-    <audio autoplay>
-        <source src="https://github.com/rparra23/Personal-Website/blob/main/Bubbles%20Drop.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
     <div class="container">
+        <div class="section about-me">
+            <h2>About</h2>
+            <p>I'm a technology consultant with a passion for IoT, robotics, production automation and scientific research. 
+                I've worked on various projects that bridge the gap between science technology and business needs. 
+                I aim to provide innovative solutions that drive efficiency and growth.
+            </p>
+        </div>
         <div class="section social-links">
             <h2>Connect with Me</h2>
             <a href="https://www.instagram.com/_rudyparra/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -158,43 +159,34 @@
             <a href="https://www.hackster.io/rudy-parra" target="_blank"><i class="fas fa-microchip"></i></a>
             <a href="https://github.com/rparra23" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="section about-me">
-            <h2>About</h2>
-            <p>Hello! I'm Rodolfo Parra, a technology consultant with a passion for IoT, robotics, and graphic design. With years of experience in the tech industry, I've worked on various projects that bridge the gap between technology and business needs. I aim to provide innovative solutions that drive efficiency and growth.</p>
-        </div>
 
         <div class="section">
             <h2>Companies I've Recently Worked With:</h2>
             <ul>
                 <li>Telemetry Insight
                     <ul>
-                        <li>Developed IoT solutions for real-time data monitoring in the oil and gas industry.</li>
+                        <li>Software & IoT Developer</li>
+                            <ul>
+                                <li>Developed IoT solutions for real-time data monitoring, detecting and controlling pumpjacks for the oil and gas industry.</li>
+                            </ul>
                     </ul>
                 </li>
-                <li>Integrated Off Grid
+                <p></p>
+                <li>IntegratedOff Grid || GridFlow || AluminumFlow
                     <ul>
-                        <li>Implemented energy management systems and optimized data analytics for off-grid solutions.</li>
+                        <li>Software & Iot Developer / Lab Technician</li>
+                            <ul>
+                                <li>Developed & researched battery technologies and atomospheric hydro generators that optimized resource reliability and data analytics for off-grid solutions.</li>
+                            </ul>
                     </ul>
                 </li>
+                <p></p>
                 <li>Lockheed Martin
                     <ul>
                         <li>Worked on robotics integration and automation projects to enhance manufacturing processes.</li>
                     </ul>
                 </li>
             </ul>
-        </div>
-
-        <div class="section contact-form">
-            <h2>Contact Me</h2>
-            <form action="mailto:parrarudy3@icloud.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
         </div>
     </div>
 </body>
