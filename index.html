@@ -99,7 +99,7 @@
             font-size: 18px;
             margin: 5px 0;
         }
-        .contact-info a {
+        .contact-info a, .resume-button {
             display: inline-block;
             height: 40px;
             line-height: 40px; /* Centers the text vertically */
@@ -110,8 +110,9 @@
             text-decoration: none;
             border-radius: 50px;
             text-align: center;
+            cursor: pointer;
         }
-        .contact-info a:hover {
+        .contact-info a:hover, .resume-button:hover {
             background-color: #5d5d5d;
         }
         ul ul {
@@ -149,7 +150,7 @@
                 I aim to provide innovative solutions that drive efficiency and growth.
             </p>
             <div class="section">
-                <button onclick="window.open('Documents/Resume_2_28_24.pdf', '_blank')">View my Resumé</button>
+                <a class="resume-button" onclick="window.open('Documents/Resume_2_28_24.pdf', '_blank')">View my Resume</a>
             </div>
         </div>
         <div class="section social-links">
