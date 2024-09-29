@@ -45,6 +45,22 @@
             box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
             border: 5px solid #000000; /* Added black border */
         }
+        .contact-info a, .resume-button, .gallery-button {
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            margin: 10px auto;
+            padding: 0 20px;
+            background-color: #000000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .contact-info a:hover, .resume-button:hover, .gallery-button:hover {
+            background-color: #5d5d5d;
+        }
         .section {
             margin-bottom: 40px;
         }
@@ -75,52 +91,21 @@
         .social-links a:hover {
             color: #0073b1;
         }
-        .contact-form input,
-        .contact-form textarea {
+        .gallery {
+            display: none;
+            flex-wrap: nowrap;
+            overflow-x: auto;
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            max-width: 1200px;
+            padding: 20px;
+            gap: 20px;
         }
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #5d5d5d;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .contact-info p {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-        .contact-info a, .resume-button {
-            display: inline-block;
-            height: 40px;
-            line-height: 40px;
-            margin: 10px auto;
-            padding: 0 20px;
-            background-color: #000000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .contact-info a:hover, .resume-button:hover {
-            background-color: #5d5d5d;
-        }
-        ul ul {
-            list-style-type: circle;
-            margin-left: 20px;
+        .gallery img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 10px;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -128,6 +113,13 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('profile-pic').src = 'images/ProfilePicture2.jpeg'; // Updated Profile Picture Path
+            
+            const galleryButton = document.getElementById('show-gallery');
+            const gallery = document.querySelector('.gallery');
+
+            galleryButton.addEventListener('click', () => {
+                gallery.style.display = gallery.style.display === 'none' ? 'flex' : 'none';
+            });
         });
     </script>
 </head>
@@ -138,13 +130,14 @@
             <h1>Rudy Parra</h1>
             <p>IoT Lab Coordinator at GridFlow</p>
             <p><b>Phone: </b>(575) 725-1290</p>
-            <p><b>GridFlow Email: </b>rudyparra@fireflymanufacturing.com</p>
-            <p><b>Personal Email: </b>parrarudy3@icloud.com</p>
+            <p><b>Business Email: </b>rudyparra@fireflymanufacturing.com</p>
+            <p><b>Email: </b>parrarudy3@icloud.com</p>
             <div class="contact-info">    
                 <a href="contact.vcf" download="Rudy_Parra.vcf">Add to Contacts</a>
             </div>
         </div>
     </header>
+    
     <div class="container">
         <div class="section about-me">
             <h2>About</h2>
@@ -153,6 +146,7 @@
                 I aim to provide innovative solutions that drive efficiency and growth.
             </p>
         </div>
+
         <div class="section social-links">
             <h2>Connect with Me</h2>
             <a href="https://www.instagram.com/_rudyparra/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -161,6 +155,19 @@
             <a href="https://www.linkedin.com/in/rodolfo-parra-329a2318a" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.hackster.io/rudy-parra" target="_blank"><i class="fas fa-microchip"></i></a>
             <a href="https://github.com/rparra23" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <!-- New Gallery Button -->
+        <div class="contact-info">    
+            <a id="show-gallery" class="gallery-button">View Research Posters</a>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <img src="images/2020-Poster.jpg" alt="2020 Poster">
+            <img src="pdfs/XAS_Poster.jpg" alt="XAS Poster">
+            <img src="pdfs/Innovative-Insights.jpg" alt="Sodium Borate Poster">
+            <!-- Add more images of the PDFs as needed -->
         </div>
     </div>
 </body>
