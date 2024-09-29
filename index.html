@@ -112,7 +112,7 @@
     <script src="images/images.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('profile-pic').src = 'images/ProfilePicture2.jpeg'; // Updated Profile Picture Path
+            document.getElementById('profile-pic').src = 'images/ProfilePicture2.jpeg'; // Correct Profile Picture Path
             
             const galleryButton = document.getElementById('show-gallery');
             const gallery = document.querySelector('.gallery');
@@ -126,7 +126,7 @@
 <body>
     <header class="section">
         <div class="container">
-            <img id="profile-pic" alt="Rudy Parra">
+            <img id="profile-pic" src="images/ProfilePicture2.jpeg" alt="Rudy Parra"> <!-- Correct image path -->
             <h1>Rudy Parra</h1>
             <p>IoT Lab Coordinator at GridFlow</p>
             <p><b>Phone: </b>(575) 725-1290</p>
@@ -157,17 +157,16 @@
             <a href="https://github.com/rparra23" target="_blank"><i class="fab fa-github"></i></a>
         </div>
 
-        <!-- New Gallery Button -->
+        <!-- Gallery Button -->
         <div class="contact-info">    
             <a id="show-gallery" class="gallery-button">View My Research Posters</a>
         </div>
 
         <!-- Gallery Section -->
         <div class="gallery">
-            <img src="images/2020-Poster.jpg" alt="2020 Poster">
-            <img src="pdfs/XAS_Poster.jpg" alt="XAS Poster">
-            <img src="pdfs/Innovative-Insights.jpg" alt="Sodium Borate Poster">
-            <!-- Add more images of the PDFs as needed -->
+            <img src="images/Innovative-Insights.jpg" alt="Innovative Insights Poster"> <!-- Correct image path -->
+            <img src="images/XAS_Poster.jpg" alt="XAS Poster"> <!-- Correct image path -->
+            <img src="images/2020-Poster.jpg" alt="2020 Poster"> <!-- Correct image path -->
         </div>
     </div>
 </body>
